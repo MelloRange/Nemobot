@@ -1,0 +1,1397 @@
+{
+	"fish_rarity": {
+		"common": {
+			"emote": "<:rcommon:924595838355914772>",
+			"percent": 0.65,
+			"grammar": "a",
+			"cost": 8
+		},
+		"uncommon": {
+			"emote": "<:runcommon:924595838188138496>",
+			"percent": 0.90,
+			"grammar": "an",
+			"cost": 10
+		},
+		"chest": {
+			"percent": 0.96,
+			"grammar": "a"
+		},
+		"rare": {
+			"emote": "<:rrare:924595837491884033>",
+			"percent": 0.99,
+			"grammar": "a",
+			"cost": 50
+		},
+		"ULTRA rare": {
+			"emote": "<a:rultrarare:924595841057058827>",
+			"percent": 0.9996,
+			"grammar": "an",
+			"cost": 100
+		},
+		"LEGENDARY": {
+			"emote": "<a:rlegendary:924595841145118730>",
+			"percent": 1,
+			"grammar": "a",
+			"cost": 500
+		}
+	},
+	"weather":{
+		"sunny":{
+			"emote": "☀️"
+		},
+		"cloudy":{
+			"emote": "☁️"
+		},
+		"rainy":{
+			"emote": "🌧️"
+		}
+	},
+	"location":{
+		"river":{
+			"emote": "💧"
+		},
+		"lake":{
+			"emote": "🚣‍"
+		},
+		"ocean":{
+			"emote": "🌊"
+		},
+		"reef":{
+			"emote": "💮"
+		}
+	},
+
+ 	"shop":{
+ 		"fish items":{
+ 			"cmd": "1",
+ 			"description": "Item shop! Buy things with `>buy <item> <amount>`",
+ 			"items": {
+ 				"bait":{
+	 				"emote": ":worm:",
+	 				"cost": 10
+	 			},
+	  			"key":{
+	 				"emote": "🔑",
+	 				"cost": 15
+	 			},
+	 			"boat":{
+	 				"emote": "🛥️",
+	 				"cost": 1000
+	 			}
+
+ 			}
+
+ 		},
+  		"aquarium":{
+  			"cmd": "2",
+  			"description": "Aquarium decorations! Buy things with `>buy <item> <aquarium number>`\nThese replace your aquarium flooring. It overwrites your previous one.",
+  			"items":{
+  				"expansion":{
+  					"emote": "↔️",
+  					"cost": 1000
+  				},
+   				"aquarium":{
+  					"emote": "🆕",
+  					"cost": 2000
+  				},
+  				"sand":{
+	 				"emote": "<:aqsand:924832136270331976>",
+	 				"cost": 10,
+	 				"ground": "<:aqsand:924832136270331976>",
+	 				"decor1": "<:aqsand:924832136270331976>",
+	 				"decor2": "<:aqsand:924832136270331976>",
+	 				"decor3": "<:aqsand:924832136270331976>"
+	 			},
+	 			 "seasand":{
+	 				"emote": "<:aqsandseagrass:924832136941416508>",
+	 				"cost": 30,
+	 				"ground": "<:aqsand:924832136270331976>",
+	 				"decor1": "<:aqsandseagrass:924832136941416508>",
+	 				"decor2": "<:aqsandseacabbage:924832136626860043>",
+	 				"decor3": "<:aqsandrocks:924832136157093909>"
+	 			},
+	 			 "freshwater":{
+	 				"emote": "<:aqmuddecor1:924846396887158885>",
+	 				"cost": 30,
+	 				"ground": "<:aqmud:924846396497096754>",
+	 				"decor1": "<:aqmuddecor1:924846396887158885>",
+	 				"decor2": "<:aqmuddecor2:924846396933279834>",
+	 				"decor3": "<:aqmuddecor3:924846397084303360>"
+	 			},
+	 			 "pink":{
+	 				"emote": "<:aqpinkdecor1:924891975239471124>",
+	 				"cost": 50,
+	 				"ground": "<:aqpink:924891974920708116>",
+	 				"decor1": "<:aqpinkdecor1:924891975239471124>",
+	 				"decor2": "<:aqpinkdecor2:924891975017193502>",
+	 				"decor3": "<:aqpinkdecor3:924891974849409035>"
+	 			},
+	 			"orange":{
+	 				"emote": "<:aquoradecor1:924896338737528863>",
+	 				"cost": 50,
+	 				"ground": "<:aquora:924896338796232724>",
+	 				"decor1": "<:aquoradecor1:924896338737528863>",
+	 				"decor2": "<:aquoradecor2:924896339156959243>",
+	 				"decor3": "<:aquoradecor3:924896339337302016>"
+	 			}
+
+  			}
+
+ 		},
+  		"ingredients":{
+ 			"cmd": "3",
+ 			"description": "Ingredient shop! Buy things with `>buy <item> <amount>`",
+ 			"items": {
+ 				"flour":{
+	 				"emote": "🌾",
+	 				"tags": ["flour"],
+	 				"cost": 5
+	 			},
+	  			"rice":{
+	 				"emote": "🍚",
+	 				"tags": ["rice"],
+	 				"cost": 5
+	 			},
+	  			"vegetables":{
+	 				"emote": "🥗",
+	 				"tags": ["vegetables"],
+	 				"cost": 10
+	 			},
+				"meat":{
+					"emote": "🥩",
+					"tags": ["meat"],
+					"cost": 20
+				}
+ 			}
+
+ 		}
+
+ 	},
+
+ 	"ingredients":{
+		"flour":{
+			"emote": "🌾",
+			"tags": ["flour"],
+			"cost": 4
+		},
+		"rice":{
+			"emote": "🍚",
+			"tags": ["rice"],
+			"cost": 4
+		},
+		"vegetables":{
+			"emote": "🥗",
+			"tags": ["vegetables"],
+			"cost": 8
+		},
+		"meat":{
+			"emote": "🥩",
+			"tags": ["meat"],
+			"cost": 18
+		},
+		"broth":{
+			"emote": "🍲",
+			"tags": ["broth"],
+			"cost": 5
+		},
+		"seaweed":{
+			"emote": "<:aqsandseagrass:924832136941416508>",
+			"tags": ["seaweed"],
+			"cost": 10
+		}
+ 	},
+
+ 	"recipes":{
+ 		"common stew": {
+ 			"emote": "<:CommonStew:926705432171511859>",
+ 			"description": "100% chance for next catch to be common.",
+ 			"hint": "5 fish, same rarity",
+ 			"ingredients": ["common","common","common","common","common"],
+ 			"cost": 40,
+ 			"charges": 1,
+ 			"priority": 10
+ 		},
+ 		 "uncommon stew": {
+ 			"emote": "<:UncommonStew:926705432259592192>",
+ 			"description": "100% chance for next catch to be uncommon.",
+ 			"hint": "5 fish, same rarity",
+ 			"ingredients": ["uncommon","uncommon","uncommon","uncommon","uncommon"],
+ 			"cost": 50,
+ 			"charges": 1,
+ 			"priority": 10
+ 		},
+  		 "rare stew": {
+ 			"emote": "<:RareStew:926705432314126336>",
+ 			"description": "100% chance for next catch to be rare.",
+ 			"hint": "5 fish, same rarity",
+ 			"ingredients": ["rare","rare","rare","rare","rare"],
+ 			"cost": 250,
+ 			"charges": 1,
+ 			"priority": 1
+ 		},
+  		 "ultra rare stew": {
+ 			"emote": "<:ULTRARareStew:926705432326713405>",
+ 			"description": "100% chance for next catch to be ultra rare.",
+ 			"hint": "4 fish, same rarity",
+ 			"ingredients": ["ULTRA rare","ULTRA rare","ULTRA rare","ULTRA rare"],
+ 			"cost": 400,
+ 			"charges": 1,
+ 			"priority": 1
+ 		},
+  		 "legendary stew": {
+ 			"emote": "<:LEGENDARYStew:926705432444170320>",
+ 			"description": "100% chance for next catch to be legendary.",
+ 			"hint": "3 fish, same rarity",
+ 			"ingredients": ["LEGENDARY", "LEGENDARY", "LEGENDARY"],
+ 			"cost": 1500,
+ 			"charges": 1,
+ 			"priority": 1
+ 		},
+   		 "sardines in oil": {
+ 			"emote": "<:SardinesinOil:926465111365910569>",
+ 			"description": "Speeds up the rate of fishing.",
+ 			"hint": "3 of the same fish, something you'd find in a can",
+ 			"ingredients": ["sardine", "sardine", "sardine"],
+ 			"cost": 30,
+ 			"charges": 10,
+ 			"priority": 2
+ 		},
+   		 "shrimp cocktail": {
+ 			"emote": "<:ShrimpCocktail:926666042518933514>",
+ 			"description": "Speeds up the rate of fishing.",
+ 			"hint": "3 of the same fish, would look nice in a cocktail",
+ 			"ingredients": ["shrimp", "shrimp", "shrimp"],
+ 			"cost": 30,
+ 			"charges": 10,
+ 			"priority": 2
+ 		},
+    	"ganjang gejang": {
+ 			"emote": "<:GanjangGejang:926367337299456051>",
+ 			"description": "100% chance for next catch to be a chest.",
+ 			"hint": "2 crabs looking blue",
+ 			"ingredients": ["blue crab", "blue crab"],
+ 			"cost": 30,
+ 			"charges": 1,
+ 			"priority": 2
+ 		},
+     	"pan-fried bass": {
+ 			"emote": "<:PanfriedBass:926659181187072031>",
+ 			"description": "No bonus",
+ 			"hint": "1 fish whose name is also an instrument",
+ 			"ingredients": ["bass"],
+ 			"cost": 12,
+ 			"charges": 1,
+ 			"priority": 1
+ 		},
+      	"takoyaki": {
+ 			"emote": "🧆",
+ 			"description": "No bonus",
+ 			"hint": "A japanese street snack shaped like balls",
+ 			"ingredients": ["octopus", "flour"],
+ 			"cost": 20,
+ 			"charges": 1,
+ 			"priority": 1
+ 		},
+       	"lobster tail": {
+ 			"emote": "<:LobsterTail:926674956836810812>",
+ 			"description": "Boosts the catch rate of all rarer fish.",
+ 			"hint": "The tail of a high class crustacean",
+ 			"ingredients": ["lobster"],
+ 			"cost": 60,
+ 			"charges": 3,
+ 			"priority": 3
+ 		},
+        "fried calamari": {
+ 			"emote": "♨️ 🦑",
+ 			"description": "No bonus",
+ 			"hint": "Fried rings of many legs",
+ 			"ingredients": ["squid"],
+ 			"cost": 14,
+ 			"charges": 1,
+ 			"priority": 2
+ 		},
+         "onigiri": {
+ 			"emote": "🍙",
+ 			"description": "Catch sunny-day fish.",
+ 			"hint": "A japanese rice ball",
+ 			"ingredients": ["rice", "seaweed"],
+ 			"cost": 25,
+ 			"charges": 3,
+ 			"priority": 4
+ 		},
+        "seaweed salad": {
+ 			"emote": "🥗",
+ 			"description": "Catch cloudy-day fish.",
+ 			"hint": "A salad made with 2 ocean weed",
+ 			"ingredients": ["seaweed", "seaweed"],
+ 			"cost": 30,
+ 			"charges": 1,
+ 			"priority": 3
+ 		},
+         "seaweed soup": {
+ 			"emote": "🍵",
+ 			"description": "Catch rainy-day fish.",
+ 			"hint": "A soup made with broth and ocean weed",
+ 			"ingredients": ["seaweed", "broth"],
+ 			"cost": 25,
+ 			"charges": 1,
+ 			"priority": 5
+ 		},
+         "fish and chips": {
+ 			"emote": ":fries:",
+ 			"description": "No bonus",
+ 			"hint": "Fish n fries.",
+ 			"ingredients": ["cod", "vegetables"],
+ 			"cost": 25,
+ 			"charges": 1,
+ 			"priority": 2
+ 		}
+ 	},
+
+    "fish":{
+        "orange clownfish":{
+            "emote":"<:Clownfish:923801335680360458>",
+            "description": "It's such a silly fish.",
+            "rarity": "common",
+			"tags": ["common", "damselfish"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["reef"]
+        },
+		"azure demoiselle":{
+            "emote":"<:AzureDemoiselle:925384988919201822>",
+            "description": "It's such a silly fish.",
+            "rarity": "common",
+			"tags": ["common", "damselfish"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["reef"]
+        },
+		"sergeant major":{
+            "emote":"<:SergeantMajor:925384989468672020>",
+            "description": "And now for the sergeant minor.",
+            "rarity": "common",
+			"tags": ["common", "damselfish"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["ocean", "reef"]
+        },
+		"blue tang":{
+            "emote":"<:BlueTang:923801335348994179>",
+            "description": "Da ba dee da ba di.",
+            "rarity": "common",
+			"tags": ["common", "surgeonfish"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["reef"]
+        },
+		"powder blue tang":{
+            "emote":"<:PowderBlueTang:925384989221199882>",
+            "description": "Could be a part of my spice rack.",
+            "rarity": "common",
+			"tags": ["common", "surgeonfish"],
+            "weather": ["sunny", "rainy"],
+            "location": ["reef"]
+        },
+		"yellow tang":{
+            "emote":"<:YellowTang:925386485514002432>",
+            "description": "Mmmm... tangy.",
+            "rarity": "common",
+			"tags": ["common", "surgeonfish"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["reef"]
+        },
+		"orchid dottyback":{
+            "emote":"<:OrchidDottyback:925386583476158534>",
+            "description": "But there aren't any orchids at sea...",
+            "rarity": "common",
+			"tags": ["common", "dottyback"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["reef"]
+        },
+		"copperband butterflyfish":{
+            "emote":"<:CopperbandButterfly:923801335864897537>",
+            "description": "Time to smuggle some copperband.",
+            "rarity": "common",
+			"tags": ["common", "butterflyfish"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["reef"]
+        },
+		"schooling bannerfish":{
+            "emote":"<:SchoolingBannerfish:925587767063351337>",
+            "description": "But I don't wanna go back to school yet!",
+            "rarity": "common",
+			"tags": ["common", "butterflyfish"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["reef", "ocean"]
+        },
+		"red squirrelfish":{
+            "emote":"<:RedSquirrelfish:925716974338719754>",
+            "description": "Can I feed it sea acorns?",
+            "rarity": "common",
+			"tags": ["common", "squirrelfish"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["reef"]
+        },
+		"john dory":{
+            "emote":"<:JohnDory:925995735743348747>",
+            "description": "Default name: John Doery.",
+            "rarity": "common",
+			"tags": ["common", "dory"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"sardine":{
+            "emote":"<:Sardine:924876514292564038>",
+            "description": "It'll be my sardinner.",
+            "rarity": "common",
+			"tags": ["common", "sardine"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"anchovy":{
+            "emote":"<:Anchovy:924879959045046272>",
+            "description": "It's not pizza time.",
+            "rarity": "common",
+			"tags": ["common", "sardine"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"atlantic cod":{
+            "emote":"<:Cod:650582670249558017>",
+            "description": "oh cod no.",
+            "rarity": "common",
+			"tags": ["common", "cod"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"horse mackerel":{
+            "emote":"<:Mackerel:650582694350290965>",
+            "description": "Now I want a pony mackerel.",
+            "rarity": "common",
+			"tags": ["common", "mackerel"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"sea bass":{
+            "emote":"<:SeaBass:924876514808451072>",
+            "description": "I know what you're thinking, but this is not animal crossing.",
+            "rarity": "common",
+			"tags": ["common", "bass"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"striped bass":{
+            "emote":"<:StripedBass:924876514363842571>",
+            "description": "But it can't play a note.",
+            "rarity": "common",
+			"tags": ["common", "bass"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["ocean"]
+        },
+		"moon jellyfish":{
+            "emote":"<:MoonJelly:925961223072276510>",
+            "description": "Smaller than the sun jellyfish.",
+            "rarity": "common",
+			"tags": ["common", "jellyfish"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"common shrimp":{
+            "emote":":shrimp:",
+            "description": "Shrimp in da barbie.",
+            "rarity": "common",
+			"tags": ["common", "shrimp"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["reef", "ocean"]
+        },
+		"minnow":{
+            "emote":"<:Minnow:925022276225761320> ",
+            "description": "But if you kissed minnow, I know you'd fool me again.",
+            "rarity": "common",
+			"tags": ["common", "sardine"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["river", "lake"]
+        },
+		"channel catfish":{
+            "emote":"<:ChannelCatfish:925193299189440512>",
+            "description": "Meow meow.",
+            "rarity": "common",
+			"tags": ["common", "catfish"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["river", "lake"]
+        },
+		"black bass":{
+            "emote":"<:BlackBass:924876513709555762>",
+            "description": "Nice bass.",
+            "rarity": "common",
+			"tags": ["common", "bass"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["river"]
+        },
+		"white perch":{
+            "emote":"<:WhitePerch:925022276150247454>",
+            "description": "Why perch?",
+            "rarity": "common",
+			"tags": ["common", "perch"],
+            "weather": ["cloudy"],
+            "location": ["river", "lake"]
+        },
+		"yellow perch":{
+            "emote":"<:YellowPerch:925022276271894538>",
+            "description": "OW!!! Perch.",
+            "rarity": "common",
+			"tags": ["common", "perch"],
+            "weather": ["sunny"],
+            "location": ["river", "lake"]
+        },
+		"common carp":{
+            "emote":"<:CommonCarp:925194172762316830>",
+            "description": "For my spaghetti carp-bonara!",
+            "rarity": "common",
+			"tags": ["common", "carp"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["lake"]
+        },
+		"blue tilapia":{
+            "emote":"<:BlueTilapia:925030483304259605>",
+            "description": "It's feeling blue.",
+            "rarity": "common",
+			"tags": ["common", "cichlid"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["river", "lake"]
+        },
+		"american shad":{
+            "emote":"<:AmericanShad:925193299336241193>",
+            "description": "Don't be so shad.",
+            "rarity": "common",
+			"tags": ["common", "herring"],
+            "weather": ["cloudy"],
+            "location": ["river"]
+        },
+		"sweetfish":{
+            "emote":"<:Sweetfish:925022989077086221>",
+            "description": "Aww, how sweet.",
+            "rarity": "common",
+			"tags": ["common", "sweetfish"],
+            "weather": ["sunny", "rainy"],
+            "location": ["river"]
+        },
+		"cinnamon clownfish":{
+            "emote":"<:CinnamonClownfish:925384988629827584>",
+            "description": "It's such a silly fish.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "damselfish"],
+            "weather": ["sunny", "rainy"],
+            "location": ["ocean"]
+        },
+		"longfin anthias":{
+            "emote":"<:LongfinAnthias:925386256383344721>",
+            "description": "What's with the long fin?",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "anthias"],
+            "weather": ["sunny"],
+            "location": ["reef"]
+        },
+		"threadfin anthias":{
+            "emote":"<:ThreadfinAnthias:925386256739885056>",
+            "description": "Probably a redditor.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "anthias"],
+            "weather": ["cloudy"],
+            "location": ["reef"]
+        },
+		"royal dottyback":{
+            "emote":"<:RoyalDottyback:925384988608847873>",
+            "description": "Regal polka dotted bag.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "dottyback"],
+            "weather": ["rainy"],
+            "location": ["reef"]
+        },
+		"teardrop butterflyfish":{
+            "emote":"<:TeardropButterflyfish:925587767730249788>",
+            "description": "Did you drop these tears?",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "butterflyfish"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["reef"]
+        },
+		"reticulated blenny":{
+            "emote":"<:ReticulatedBlenny:925630038135672882>",
+            "description": "Just endure the reticule.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "blenny"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["reef"]
+        },
+		"fire dartfish":{
+            "emote":"<:FireDartfish:925939803864846357>",
+            "description": "Now I need a firedartboard.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "dartfish"],
+            "weather": ["sunny"],
+            "location": ["reef"]
+        },
+		"longhorn cowfish":{
+            "emote":"<:LonghornCowfish:925946746390077561>",
+            "description": "Moo.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "boxfish"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["reef", "ocean"]
+        },
+		"flame angelfish":{
+            "emote":"<:FlameAngelfish:925593992035450920>",
+            "description": "Why is there flame in the ocean?",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "angelfish"],
+            "weather": ["sunny"],
+            "location": ["reef"]
+        },
+        "reef triggerfish":{
+            "emote":"<:ReefTriggerfish:924603907060170792>",
+            "description": "Don't pull the triggerfish.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "triggerfish"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["reef"]
+        },
+		"flying fish":{
+            "emote":"<:FlyingFish:924922422233288704>",
+            "description": "I'm here for my flying dish.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "sardine"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["ocean"]
+        },
+		"red lionfish":{
+            "emote":"<:RedLionfish:924622338371227679>",
+            "description": "Why you always lion.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "lionfish"],
+            "weather": ["sunny"],
+            "location": ["reef", "ocean"]
+        },
+		"black grouper":{
+            "emote":"<:BlackGrouper:924876513462071338>",
+            "description": "Super grouper beams are gonna blind me.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "grouper"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"barracuda":{
+            "emote":"<:Barracuda:924876513348841513>",
+            "description": "I didn't write a joke, barracuda.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "barracuda"],
+            "weather": ["sunny"],
+            "location": ["ocean"]
+        },
+		"red snapper":{
+            "emote":"<:RedSnapper:924513582266318879>",
+            "description": "It's time to read something else.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "snapper"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"fluke":{
+            "emote":"<:Fluke:924512172409757697>",
+            "description": "It's just a fluke.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "flatfish"],
+            "weather": ["sunny"],
+            "location": ["ocean"]
+        },
+		"lemon sole":{
+            "emote":"<:LemonSole:924512173613527101>",
+            "description": "It's the sole reason.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "flatfish"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"common squid":{
+            "emote":":squid:",
+            "description": "Mmmm... squib.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "squid", "cephalopod"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["reef", "ocean"]
+        },
+		"common octopus":{
+            "emote":":octopus:",
+            "description": "Come on, octopus!",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "octopus", "cephalopod"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["reef", "ocean"]
+        },
+		"flame jellyfish":{
+            "emote":"<:FlameJellyfish:925962900122771507>",
+            "description": "It's not a lame jellyfish!",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "jellyfish"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["reef", "ocean"]
+        },
+		"dungeness crab":{
+            "emote":"<:DungenessCrab:925968586797895741>",
+            "description": "Are you the dungeness master?",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "crab", "crustacean"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"chesapeake blue crab":{
+            "emote":"<:ChesapeakeBlueCrab:925968587015999498>",
+            "description": "Why are you so blue, crab?",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "crab", "crustacean", "blue crab"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"gazami crab":{
+            "emote":"<:GazamiCrab:925969303260495922>",
+            "description": "Gaze at me, crab.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "crab", "crustacean", "blue crab"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["ocean"]
+        },
+		"spiny seahorse":{
+            "emote":"<:SpinySeahorse:925985687558324264>",
+            "description": "How many spines can you have?",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "seahorse"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["reef", "ocean"]
+        },
+		"sockeye salmon":{
+            "emote":"<:SockeyeSalmon:925022567180435486>",
+            "description": "What's next, a shoenose salmon?",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "trout"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["river", "lake", "ocean"]
+        },
+		"rainbow trout":{
+            "emote":"<:RainbowTrout:925193298719670332>",
+            "description": "I headcanon it gay.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "trout"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["river"]
+        },
+		"walleye":{
+            "emote":"<:Walleye:925193548977029210>",
+            "description": "I'm gonna hold you walleye can.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "perch"],
+            "weather": ["rainy"],
+            "location": ["river", "lake"]
+        },
+		"freshwater angelfish":{
+            "emote":"<:FreshwaterAngelfish:925024962903957545>",
+            "description": "1 point for the devilfish!",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "cichlid"],
+            "weather": ["sunny"],
+            "location": ["river", "lake"]
+        },
+		"neon tetra":{
+            "emote":"<:NeonTetra:925022276288643082>",
+            "description": "Noble gas tetra.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "tetra"],
+            "weather": ["sunny", "rainy"],
+            "location": ["river"]
+        },
+		"congo tetra":{
+            "emote":"<:CongoTetra:925193298421878855>",
+            "description": "Nothing congo wrong.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "tetra"],
+            "weather": ["sunny", "rainy"],
+            "location": ["river"]
+        },
+		"betta":{
+            "emote":"<:Betta:925022057580867605>",
+            "description": "It's in early access.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "betta"],
+            "weather": ["sunny"],
+            "location": ["river"]
+        },
+		"discus":{
+            "emote":"<:Discus:925193298153451581>",
+            "description": "It's time to discus my paycheck.",
+            "rarity": "uncommon",
+			"tags": ["uncommon", "cichlid"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["river", "lake"]
+        },
+        "palenose parrotfish":{
+            "emote":"<:PalenoseParrotfish:924655707230445578>",
+            "description": "Polly wants a cracker.",
+            "rarity": "rare",
+			"tags": ["rare", "parrotfish"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["ocean"]
+        },
+		"black axil chromis":{
+            "emote":"<:BlackaxilChromis:925384988596260905>",
+            "description": "It's such a silly fish.",
+            "rarity": "rare",
+			"tags": ["rare", "damselfish"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["reef"]
+        },
+		"achilles tang":{
+            "emote":"<:AchillesTang:925384988520759296>",
+            "description": "A chilly tang.",
+            "rarity": "rare",
+			"tags": ["rare", "surgeonfish"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["reef"]
+        },
+		"short-nosed unicornfish":{
+            "emote":"<:ShortnosedUnicornfish:924605947509362729>",
+            "description": "Gish.",
+            "rarity": "rare",
+			"tags": ["rare", "surgeonfish"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"foxface rabbitfish":{
+            "emote":"<:FoxfaceRabbitfish:925386257050243092>",
+            "description": "And now I can find the rabbitface foxfish.",
+            "rarity": "rare",
+			"tags": ["rare", "surgeonfish"],
+            "weather": ["sunny"],
+            "location": ["reef"]
+        },
+		"royal gramma":{
+            "emote":"<:RoyalGramma:925384988680138803>",
+            "description": "A sovereign grandma.",
+            "rarity": "rare",
+			"tags": ["rare", "dottyback"],
+            "weather": ["sunny"],
+            "location": ["reef"]
+        },
+		"oblique lined dottyback":{
+            "emote":"<:ObliquelinedDottyback:925384989456093224>",
+            "description": "Couldn't be an angel, settled for an angle.",
+            "rarity": "rare",
+			"tags": ["rare", "dottyback"],
+            "weather": ["cloudy"],
+            "location": ["reef"]
+        },
+		"yellow longnose butterflyfish":{
+            "emote":"<:YellowLongnoseButterflyfish:925587766862049310>",
+            "description": "Whoa! An elephant!",
+            "rarity": "rare",
+			"tags": ["rare", "butterflyfish"],
+            "weather": ["sunny"],
+            "location": ["reef"]
+        },
+		"emperor angelfish":{
+            "emote":"<:EmperorAngelfish:925603906002780211>",
+            "description": "It's a sad day for the angelfish monarchy.",
+            "rarity": "rare",
+			"tags": ["rare", "angelfish"],
+            "weather": ["rainy"],
+            "location": ["reef"]
+        },
+		"queen angelfish":{
+            "emote":"<:QueenAngelfish:925612627797880893>",
+            "description": "Is this the real life, is this just fanta-sea?",
+            "rarity": "rare",
+			"tags": ["rare", "angelfish"],
+            "weather": ["cloudy"],
+            "location": ["reef"]
+        },
+		"coral beauty":{
+            "emote":"<:CoralBeauty:925615638943264788>",
+            "description": "Coral beauty and the beast... I guess I'll be the beast.",
+            "rarity": "rare",
+			"tags": ["rare", "angelfish"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["reef"]
+        },
+		"blueside fairy wrasse":{
+            "emote":"<:YellowflankedFairyWrasse:925645707896029185>",
+            "description": "The wrasse is bluer on the other side.",
+            "rarity": "rare",
+			"tags": ["rare", "wrasse"],
+            "weather": ["cloudy"],
+            "location": ["reef"]
+        },
+		"moorish idol":{
+            "emote":"<:MoorishIdol:925929666823454752>",
+            "description": "Starting from today... I am a moorish idol!",
+            "rarity": "rare",
+			"tags": ["rare", "surgeonfish"],
+            "weather": ["sunny"],
+            "location": ["reef"]
+        },
+		"midas blenny":{
+            "emote":"<:MidasBlenny:925630038114729984>",
+            "description": "Got jokes? I've got blenny.",
+            "rarity": "rare",
+			"tags": ["rare", "blenny"],
+            "weather": ["sunny"],
+            "location": ["reef"]
+        },
+		"mandarinfish":{
+            "emote":"<:Mandarinfish:925939804791783465>",
+            "description": "Not to confuse with the cantonese fish.",
+            "rarity": "rare",
+			"tags": ["rare", "blenny"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["reef"]
+        },
+		"clown triggerfish":{
+            "emote":"<:ClownTriggerfish:925626462499921972>",
+            "description": "How many can you fit in a car triggerfish?",
+            "rarity": "rare",
+			"tags": ["rare", "triggerfish"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["reef", "ocean"]
+        },
+		"spotted boxfish":{
+            "emote":"<:SpottedBoxfish:925946746977284146>",
+            "description": "Because I've spotted it!",
+            "rarity": "rare",
+			"tags": ["rare", "boxfish"],
+            "weather": ["rainy"],
+            "location": ["reef"]
+        },
+		"coral grouper":{
+            "emote":"<:CoralGrouper:925686909739626547>",
+            "description": "And now it's a coral individualer.",
+            "rarity": "rare",
+			"tags": ["rare", "grouper"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["reef"]
+        },
+		"potato grouper":{
+            "emote":"<:PotatoGrouper:925686909685092363>",
+            "description": "I don't need anymore carbs.",
+            "rarity": "rare",
+			"tags": ["rare", "grouper"],
+            "weather": ["rainy"],
+            "location": ["ocean"]
+        },
+		"banded moray":{
+            "emote":"<:BandedMoray:925954169410584576>",
+            "description": "And now for an encore.",
+            "rarity": "rare",
+			"tags": ["rare", "eel"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["reef"]
+        },
+		"blue marlin":{
+            "emote":"<:BlueMarlin:924826385388806207>",
+            "description": "Marlin, marlin, stand by me.",
+            "rarity": "rare",
+			"tags": ["rare", "swordfish"],
+            "weather": ["sunny", "rainy"],
+            "location": ["ocean"]
+        },
+		"mahi mahi":{
+            "emote":"<:Mahimahi:924661292051095582>",
+            "description": "Don't give it the mahi mahi.",
+            "rarity": "rare",
+			"tags": ["rare", "mahi mahi"],
+            "weather": ["sunny"],
+            "location": ["ocean"]
+        },
+		"sailfish":{
+            "emote":"<:Sailfish:924826386068287488>",
+            "description": "Now I can control the boat!",
+            "rarity": "rare",
+			"tags": ["rare", "swordfish"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["ocean"]
+        },
+		"diamond trevally":{
+            "emote":"<:DiamondTrevally:925995735047094302>",
+            "description": "Will you mariti-me?",
+            "rarity": "rare",
+			"tags": ["rare", "trevally"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["ocean"]
+        },
+		"bluefin trevally":{
+            "emote":"<:BluefinTrevally:924852625038540810>",
+            "description": "Ain't no trevally low enough.",
+            "rarity": "rare",
+			"tags": ["rare", "trevally"],
+            "weather": ["rainy"],
+            "location": ["ocean"]
+        },
+		"yellowfin tuna":{
+            "emote":"<:YellowfinTuna:924659072052117555>",
+            "description": "But you can't tuna fish.",
+            "rarity": "rare",
+			"tags": ["rare", "tuna"],
+            "weather": ["sunny", "rainy"],
+            "location": ["ocean"]
+        },
+		"long-spine porcupinefish":{
+            "emote":":blowfish:",
+            "description": "Augh.",
+            "rarity": "rare",
+			"tags": ["rare", "pufferfish"],
+            "weather": ["sunny"],
+            "location": ["ocean"]
+        },
+		"ribbon eel":{
+            "emote":"<:RibbonEel:924856263001669662>",
+            "description": "Can you eel the love tonight.",
+            "rarity": "rare",
+			"tags": ["rare", "eel"],
+            "weather": ["rainy"],
+            "location": ["reef", "ocean"]
+        },
+		"carribean reef squid":{
+            "emote":"<:CarribeanReefSquid:925959415830560849>",
+            "description": "Want me to carry beans?",
+            "rarity": "rare",
+			"tags": ["rare", "squid", "cephalopod"],
+            "weather": ["sunny", "rainy"],
+            "location": ["reef"]
+        },
+		"peacock mantis shrimp":{
+            "emote":"<:PeacockMantisShrimp:925983172360036383>",
+            "description": "Bird, insect, or shrimp?",
+            "rarity": "rare",
+			"tags": ["rare", "shrimp", "crustacean"],
+            "weather": ["cloudy"],
+            "location": ["reef"]
+        },
+		"spider crab":{
+            "emote":"<:SpiderCrab:925988220590751835>",
+            "description": "Spider crab, spider crab. Does whatever a spider crab.",
+            "rarity": "rare",
+			"tags": ["rare", "crab", "crustacean"],
+            "weather": ["cloudy"],
+            "location": ["ocean"]
+        },
+		"common lobster":{
+            "emote":":lobster:",
+            "description": "But it's not common...",
+            "rarity": "rare",
+			"tags": ["rare", "lobster", "crustacean"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["reef", "ocean"]
+        },
+		"green swordtail":{
+            "emote":"<:GreenSwordtail:925196083657842778>",
+            "description": "How about a hammerhead?",
+            "rarity": "rare",
+			"tags": ["rare", "swordtail"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["river", "lake"]
+        },
+		"giant snakehead":{
+            "emote":"<:GiantSnakehead:925204880669425755>",
+            "description": "Is there a tiny snakehead?",
+            "rarity": "rare",
+			"tags": ["rare", "snakehead"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["lake"]
+        },
+		"alligator gar":{
+            "emote":"<:AlligatorGar:925204879310458912>",
+            "description": "Don't confuse it with the crocodile gar.",
+            "rarity": "rare",
+			"tags": ["rare", "gar"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["river"]
+        },
+		"koi":{
+            "emote":"<:Koi:925194172078637127>",
+            "description": "koi koi.",
+            "rarity": "rare",
+			"tags": ["rare", "carp"],
+            "weather": ["sunny"],
+            "location": ["lake"]
+        },
+		"piranha":{
+            "emote":"<:Piranha:925207827608391722>",
+            "description": "Piran-HA! Gotcha!",
+            "rarity": "rare",
+			"tags": ["rare", "piranha"],
+            "weather": ["sunny", "rainy"],
+            "location": ["river"]
+        },
+		"northern pike":{
+            "emote":"<:NorthernPike:925209435465469973>",
+            "description": "But I can't ride a picycle!",
+            "rarity": "rare",
+			"tags": ["rare", "pike"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["river", "lake"]
+        },
+		"humphead wrasse":{
+            "emote":"<:HumpheadWrasse:925636247031021578>",
+            "description": "Now I can humphead rest.",
+            "rarity": "ULTRA rare",
+			"tags": ["ULTRA rare", "wrasse"],
+            "weather": ["sunny"],
+            "location": ["reef"]
+        },
+		"manta ray":{
+            "emote":"<:MantaRay:925954702787641395>",
+            "description": "Let the manta rays.",
+            "rarity": "ULTRA rare",
+			"tags": ["ULTRA rare", "ray"],
+            "weather": ["sunny", "cloudy"],
+            "location": ["reef"]
+        },
+		"ocean sunfish":{
+            "emote":"<:Sunfish:924517436143849513>",
+            "description": "Oh, mister ocean fish.",
+            "rarity": "ULTRA rare",
+			"tags": ["ULTRA rare", "sunfish"],
+            "weather": ["sunny"],
+            "location": ["ocean"]
+        },
+		"blacktip reefshark":{
+            "emote":"<:BlacktipReefShark:925995733927227442>",
+            "description": "Here's a quick tip.",
+            "rarity": "ULTRA rare",
+			"tags": ["ULTRA rare", "shark"],
+            "weather": ["sunny", "rainy"],
+            "location": ["reef"]
+        },
+		"hammerhead shark":{
+            "emote":"<:HammerheadShark:925210904121995304>",
+            "description": "How about a swordtail?",
+            "rarity": "ULTRA rare",
+			"tags": ["ULTRA rare", "shark"],
+            "weather": ["rainy"],
+            "location": ["reef", "ocean"]
+        },
+		"great white shark":{
+            "emote":":shark:",
+            "description": "As opposed to the ordinary white shark.",
+            "rarity": "ULTRA rare",
+			"tags": ["ULTRA rare", "shark"],
+            "weather": ["rainy"],
+            "location": ["ocean"]
+        },
+		"anglerfish":{
+            "emote":"<:AnglerFish:924863564349587486>",
+            "description": "I could be your angler... or yuor devil.",
+            "rarity": "ULTRA rare",
+			"tags": ["ULTRA rare", "anglerfish"],
+            "weather": ["cloudy"],
+            "location": ["ocean"]
+        },
+		"king crab":{
+            "emote":"<:RedKingCrab:925988220666257418>",
+            "description": "Now we need a queen crab!",
+            "rarity": "ULTRA rare",
+			"tags": ["ULTRA rare", "crab", "crustacean"],
+            "weather": ["sunny", "rainy"],
+            "location": ["ocean"]
+        },
+		"sturgeon":{
+            "emote":"<:Sturgeon:924508633302183956>",
+            "description": "It's practices metdicine.",
+            "rarity": "ULTRA rare",
+			"tags": ["ULTRA rare", "sturgeon"],
+            "weather": ["cloudy", "rainy"],
+            "location": ["river"]
+        },
+		"arapaima":{
+            "emote":"<:arapaima:924499588893769729>",
+            "description": "Arapainah.",
+            "rarity": "ULTRA rare",
+			"tags": ["ULTRA rare", "arapaima"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["river"]
+        },
+		"arowana":{
+            "emote":"<:Arowana:924493247689134110>",
+            "description": "I am happy for it.",
+            "rarity": "ULTRA rare",
+			"tags": ["ULTRA rare", "arowana"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["lake"]
+        },
+         "mellofish":{
+            "emote":"<:Mellofish:925218461385359382>",
+            "description": "Bnuuy.",
+            "rarity": "LEGENDARY",
+			"tags": ["LEGENDARY", "mellofish"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["ocean", "river"]
+        },
+		"yonfish":{
+            "emote":"<:Yonfish:925219793878003783>",
+            "description": "Oh, how the tables have turned.",
+            "rarity": "LEGENDARY",
+			"tags": ["LEGENDARY", "yonfish"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["reef", "ocean"]
+        },
+		"robinfish":{
+            "emote":"<:Robinfish:926011297202601984>",
+            "description": "Which bank we robin?",
+            "rarity": "LEGENDARY",
+			"tags": ["LEGENDARY", "robinfish"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["river", "lake"]
+        },
+		"tropifish":{
+            "emote":"<:Tropifish:926011296359542864>",
+            "description": "This will become a tropical subject.",
+            "rarity": "LEGENDARY",
+			"tags": ["LEGENDARY", "tropifish"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["reef"]
+        },
+		"namazu":{
+            "emote":"<:Namazu:925226145543233636>",
+            "description": "The Central Park Zoo.",
+            "rarity": "LEGENDARY",
+			"tags": ["LEGENDARY", "catfish", "namazu"],
+            "weather": ["sunny", "cloudy", "rainy"],
+            "location": ["river", "lake"]
+        },
+		"kelpie":{
+            "emote":"<:Kelpie:925226128166252564>",
+            "description": "What?",
+            "rarity": "LEGENDARY",
+			"tags": ["LEGENDARY", "horse"],
+            "weather": ["cloudy"],
+            "location": ["ocean"]
+        },
+		"hippocampus":{
+            "emote":"<:Hippocampus:926002064159543347>",
+            "description": "And you're back to being a part of my brain.",
+            "rarity": "LEGENDARY",
+			"tags": ["LEGENDARY", "horse"],
+            "weather": ["rainy"],
+            "location": ["ocean"]
+        },
+		"kraken":{
+            "emote":"<:Kraken:925998540025643038>",
+            "description": "We be kraken a joke.",
+            "rarity": "LEGENDARY",
+			"tags": ["LEGENDARY", "squid", "cephalopod", "kraken"],
+            "weather": ["rainy"],
+            "location": ["ocean"]
+        },
+        "ascii trout":{
+            "emote":"<:ASCIITrout:925591651865481257>",
+            "description": "oooohhh... ASCII what this is...",
+            "rarity": "LEGENDARY",
+			"tags": ["LEGENDARY", "ASCII"],
+            "weather": ["cloudy"],
+            "location": ["river"]
+        }
+    },
+
+	"chests":{
+		"wood chest":{
+			"emote":"💼",
+			"description": "wood",
+			"weather": ["sunny", "cloudy", "rainy"],
+			"location": ["river", "lake", "ocean", "reef"],
+			"loot":[
+				[{"seaweed": 1}],
+				[{"seaweed": 2}],
+				[{"seaweed": 3}],
+				[{"bait": 5}],
+				[{"bait": 4}],
+				[{"bait": 3}],
+				[{"silver chest": 1}],
+				[{"key": 2}],
+				[{"silver": 30}],
+				[{"silver": 40}]
+			]
+		},
+		"silver chest":{
+			"emote":"💼",
+			"description": "silver",
+			"weather": ["cloudy", "rainy"],
+			"location": ["river", "lake", "ocean"],
+			"loot":[
+				[{"seaweed": 4}],
+				[{"bait": 8}],
+				[{"bait": 5}],
+				[{"bait": 3}],
+				[{"wood chest": 2}, {"key": 2}],
+				[{"gold chest": 1}],
+				[{"key": 3}],
+				[{"silver": 40}],
+				[{"silver": 50}]
+			]
+		},
+		"gold chest":{
+			"emote":"💼",
+			"description": "gold",
+			"weather": ["rainy"],
+			"location": ["lake", "ocean"],
+			"loot":[
+				[{"bait": 15}],
+				[{"bait": 8}],
+				[{"bait": 5}],
+				[{"silver chest": 2}, {"key": 2}],
+				[{"gold chest": 1}, {"key": 1}, {"silver": 10}],
+				[{"key":5}],
+				[{"silver": 60}],
+				[{"silver": 80}],
+				[{"silver": 100}]
+			]
+		}
+	},
+
+	"rules": {
+		"0": {
+			"description" : "None"
+		},
+		"1": {
+			"description" : "Do not be racist, homophobic, transphobic, misogynistic, ableist, or inappropriate. Do not use offensive slurs, even if you can reclaim it."
+		},
+		"2": {
+			"description" : "Do not harass people or make them feel uncomfortable."
+		},
+		"3": {
+			"description" : "Do not spam in the chat."
+		},
+		"4": {
+			"description" : "Do not bring up depressing and serious issues."
+		},
+		"5": {
+			"description" : "Common phrases or minimal use of other languages is okay, but full conversational phrases that disturb other conversations is not allowed."
+		},
+		"6": {
+			"description" : "Do not gossip about others or bring up drama."
+		},
+		"7": {
+			"description" : "The keyword is orange."
+		},
+		"8": {
+			"description" : "Don’t talk about politics or religion."
+		},
+		"9": {
+			"description" : "Avoid role-playing in the chat, this is not a role-playing server."
+		},
+		"10": {
+			"description" : "Art theft is banned. If you want to share art other people created, please credit them!"
+		},
+		"11": {
+			"description" : "No NSFW."
+		},
+		"12": {
+			"description" : "No IRL gore."
+		},
+		"13": {
+			"description" : "If you want to put disturbing art in the art chat (gore, body horror, suicide implications, etc.) you MUST put it in spoiler tags and mention the warnings of what the art contains."
+		}
+	}
+}

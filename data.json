@@ -1,0 +1,1992 @@
+{
+    "650582561965211648": {
+        "channels": {
+            "art": [],
+            "botbanned": [],
+            "expbanned": [],
+            "waiting_log": "0",
+            "waiting_room": "0",
+            "warning_log": "0"
+        },
+        "members": {
+            "195244363339530240": {
+                "bans": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "255858966683320331": {
+                "bans": {},
+                "experience": 16,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 2,
+                "money": {
+                    "gold": 0,
+                    "silver": 102
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 8
+            },
+            "263374409228746752": {
+                "bans": {},
+                "experience": 10,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 101
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 5
+            },
+            "498553306465959946": {
+                "bans": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "619583816889139210": {
+                "bans": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "855321205972008961": {
+                "bans": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            }
+        },
+        "password": "orange",
+        "roles": {},
+        "world": {}
+    },
+    "796918506050420787": {
+        "channels": {
+            "art": "922029305205227551",
+            "botbanned": [],
+            "expbanned": [],
+            "modmail": "922029305205227551",
+            "waiting_log": "0",
+            "waiting_room": "0",
+            "warning_log": "922029305205227551"
+        },
+        "members": {
+            "201804863187714049": {
+                "aquarium": {
+                    "1": {
+                        "decor": "sand",
+                        "fish": [
+                            "sweetfish",
+                            "discus"
+                        ],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 132,
+                "fish_location": "river",
+                "fish_log": {
+                    "congo tetra": {
+                        "first_obtained": "2021-12-31",
+                        "total_caught": 1
+                    },
+                    "discus": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    },
+                    "sweetfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    }
+                },
+                "fish_upgrades": [],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "chests": {},
+                    "dishes": {},
+                    "fish": {
+                        "congo tetra": 1,
+                        "sweetfish": 1
+                    },
+                    "ingredients": {}
+                },
+                "is_in_server": true,
+                "karma": 70,
+                "level": 3,
+                "money": {
+                    "gold": 0,
+                    "silver": 74
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 66
+            },
+            "232091727094218752": {
+                "aquarium": {
+                    "1": {
+                        "decor": "sand",
+                        "fish": [],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 4,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "chests": {},
+                    "dishes": {},
+                    "fish": {},
+                    "ingredients": {}
+                },
+                "is_in_server": true,
+                "karma": 60,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 101
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 2
+            },
+            "234395307759108106": {
+                "aquarium": {
+                    "1": {
+                        "decor": "sand",
+                        "fish": [],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "chests": {},
+                    "dishes": {},
+                    "fish": {},
+                    "ingredients": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "235088799074484224": {
+                "aquarium": {
+                    "1": {
+                        "decor": "sand",
+                        "fish": [],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "chests": {},
+                    "dishes": {},
+                    "fish": {},
+                    "ingredients": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "255858966683320331": {
+                "aquarium": {
+                    "1": {
+                        "decor": "sand",
+                        "fish": [
+                            "ascii trout",
+                            "sardine",
+                            "sea bass",
+                            "blue tang",
+                            "copperband butterflyfish"
+                        ],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 380,
+                "fish_location": "reef",
+                "fish_log": {
+                    "alligator gar": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    },
+                    "anchovy": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 8
+                    },
+                    "arapaima": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    },
+                    "atlantic cod": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 3
+                    },
+                    "azure demoiselle": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 2
+                    },
+                    "barracuda": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "betta": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "black grouper": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "blacktip reefshark": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 1
+                    },
+                    "blue tang": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 6
+                    },
+                    "bluefin trevally": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    },
+                    "channel catfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "common carp": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 8
+                    },
+                    "copperband butterflyfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 6
+                    },
+                    "discus": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "flying fish": {
+                        "first_obtained": "2021-12-25",
+                        "total_caught": 1
+                    },
+                    "freshwater angelfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 7
+                    },
+                    "giant snakehead": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "horse mackerel": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 3
+                    },
+                    "koi": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    },
+                    "long-spine porcupinefish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    },
+                    "longhorn cowfish": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 2
+                    },
+                    "minnow": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 12
+                    },
+                    "ocean sunfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "orange clownfish": {
+                        "first_obtained": "2021-12-25",
+                        "total_caught": 1
+                    },
+                    "orchid dottyback": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 1
+                    },
+                    "powder blue tang": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 1
+                    },
+                    "red lionfish": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 5
+                    },
+                    "red snapper": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 4
+                    },
+                    "red squirrelfish": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 4
+                    },
+                    "reef triggerfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "sardine": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 7
+                    },
+                    "schooling bannerfish": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 3
+                    },
+                    "sea bass": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 5
+                    },
+                    "sergeant major": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 1
+                    },
+                    "sockeye salmon": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 3
+                    },
+                    "spiny seahorse": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 2
+                    },
+                    "striped bass": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 4
+                    },
+                    "sweetfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 7
+                    },
+                    "yellow perch": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 6
+                    },
+                    "yellow tang": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 5
+                    },
+                    "yonfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    }
+                },
+                "fish_upgrades": [
+                    "boat"
+                ],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "bait": 817,
+                    "chests": {
+                        "gold chest": 1,
+                        "wood chest": 1
+                    },
+                    "dishes": {
+                        "legendary stew": 1
+                    },
+                    "fish": {
+                        "ascii trout": 1,
+                        "blue tilapia": 1,
+                        "copperband butterflyfish": 1,
+                        "tropifish": 1
+                    },
+                    "ingredients": {}
+                },
+                "is_in_server": true,
+                "karma": 206,
+                "level": 4,
+                "money": {
+                    "gold": 0,
+                    "silver": 2174
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 255,
+                    "description": "I love MelloRange from YouTube.com",
+                    "reference": {}
+                },
+                "recipe_log": {
+                    "legendary stew": {
+                        "first_obtained": "2021-12-31",
+                        "total_cooked": 1
+                    }
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 190
+            },
+            "263374409228746752": {
+                "aquarium": {
+                    "1": {
+                        "decor": "pink",
+                        "fish": [
+                            "red snapper",
+                            "barracuda",
+                            "red snapper",
+                            "flame jellyfish",
+                            "horse mackerel"
+                        ],
+                        "slots": 4
+                    },
+                    "2": {
+                        "decor": "pink",
+                        "fish": [],
+                        "slots": 3
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 1114,
+                "fish_location": "reef",
+                "fish_log": {
+                    "anchovy": {
+                        "first_obtained": "2021-12-29",
+                        "total_caught": 1
+                    },
+                    "azure demoiselle": {
+                        "first_obtained": "2021-12-31",
+                        "total_caught": 3
+                    },
+                    "barracuda": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "blue tang": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 8
+                    },
+                    "cinnamon clownfish": {
+                        "first_obtained": "2021-12-29",
+                        "total_caught": 1
+                    },
+                    "common carp": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 10
+                    },
+                    "common lobster": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 1
+                    },
+                    "common octopus": {
+                        "first_obtained": "2021-12-29",
+                        "total_caught": 6
+                    },
+                    "common squid": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 1
+                    },
+                    "diamond trevally": {
+                        "first_obtained": "2021-12-29",
+                        "total_caught": 1
+                    },
+                    "discus": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    },
+                    "fire dartfish": {
+                        "first_obtained": "2021-12-31",
+                        "total_caught": 1
+                    },
+                    "flame jellyfish": {
+                        "first_obtained": "2021-12-31",
+                        "total_caught": 3
+                    },
+                    "fluke": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "flying fish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "freshwater angelfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 3
+                    },
+                    "gazami crab": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 1
+                    },
+                    "horse mackerel": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 10
+                    },
+                    "humphead wrasse": {
+                        "first_obtained": "2021-12-31",
+                        "total_caught": 1
+                    },
+                    "john dory": {
+                        "first_obtained": "2021-12-29",
+                        "total_caught": 8
+                    },
+                    "koi": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    },
+                    "longfin anthias": {
+                        "first_obtained": "2021-12-31",
+                        "total_caught": 1
+                    },
+                    "longhorn cowfish": {
+                        "first_obtained": "2021-12-29",
+                        "total_caught": 2
+                    },
+                    "mandarinfish": {
+                        "first_obtained": "2022-01-01",
+                        "total_caught": 1
+                    },
+                    "minnow": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "ocean sunfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    },
+                    "orange clownfish": {
+                        "first_obtained": "2021-12-31",
+                        "total_caught": 1
+                    },
+                    "orchid dottyback": {
+                        "first_obtained": "2021-12-31",
+                        "total_caught": 2
+                    },
+                    "powder blue tang": {
+                        "first_obtained": "2021-12-31",
+                        "total_caught": 1
+                    },
+                    "red lionfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 3
+                    },
+                    "red snapper": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 3
+                    },
+                    "red squirrelfish": {
+                        "first_obtained": "2021-12-31",
+                        "total_caught": 3
+                    },
+                    "reef triggerfish": {
+                        "first_obtained": "2022-01-01",
+                        "total_caught": 1
+                    },
+                    "sailfish": {
+                        "first_obtained": "2021-12-28",
+                        "total_caught": 1
+                    },
+                    "sardine": {
+                        "first_obtained": "2021-12-28",
+                        "total_caught": 5
+                    },
+                    "schooling bannerfish": {
+                        "first_obtained": "2021-12-29",
+                        "total_caught": 7
+                    },
+                    "sea bass": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "sergeant major": {
+                        "first_obtained": "2021-12-29",
+                        "total_caught": 3
+                    },
+                    "sockeye salmon": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 3
+                    },
+                    "spiny seahorse": {
+                        "first_obtained": "2021-12-29",
+                        "total_caught": 2
+                    },
+                    "striped bass": {
+                        "first_obtained": "2021-12-28",
+                        "total_caught": 7
+                    },
+                    "yellow perch": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 6
+                    },
+                    "yellow tang": {
+                        "first_obtained": "2021-12-31",
+                        "total_caught": 3
+                    }
+                },
+                "fish_upgrades": [
+                    "boat"
+                ],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "bait": 856,
+                    "chests": {
+                        "wood chest": 2
+                    },
+                    "dishes": {
+                        "ganjang gejang": 7,
+                        "seaweed salad": 2,
+                        "takoyaki": 3
+                    },
+                    "fish": {
+                        "azure demoiselle": 1,
+                        "blue tang": 2,
+                        "fire dartfish": 1,
+                        "flame jellyfish": 1,
+                        "humphead wrasse": 1,
+                        "mandarinfish": 1,
+                        "orchid dottyback": 2,
+                        "reef triggerfish": 1,
+                        "schooling bannerfish": 2,
+                        "sergeant major": 2,
+                        "spiny seahorse": 1,
+                        "yellow tang": 1
+                    },
+                    "ingredients": {
+                        "flour": 2
+                    },
+                    "key": 7
+                },
+                "is_in_server": true,
+                "karma": 1761,
+                "level": 5,
+                "money": {
+                    "gold": 0,
+                    "silver": 61196
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 16777215,
+                    "description": "hi",
+                    "reference": {
+                        "main_reference": "https://cdn.discordapp.com/attachments/922029305205227551/922440231033143376/zenith_hatchling.png\n"
+                    }
+                },
+                "recipe_log": {
+                    "common stew": {
+                        "first_obtained": "2021-12-31",
+                        "total_cooked": 2
+                    },
+                    "ganjang gejang": {
+                        "first_obtained": "2021-12-31",
+                        "total_cooked": 2
+                    },
+                    "pan-fried bass": {
+                        "first_obtained": "2021-12-31",
+                        "total_cooked": 1
+                    },
+                    "sardines in oil": {
+                        "first_obtained": "2021-12-31",
+                        "total_cooked": 1
+                    },
+                    "seaweed salad": {
+                        "first_obtained": "2022-01-01",
+                        "total_cooked": 1
+                    },
+                    "takoyaki": {
+                        "first_obtained": "2022-01-01",
+                        "total_cooked": 2
+                    }
+                },
+                "warning_history": {
+                    "1": {
+                        "date": "2021-12-20",
+                        "given_by": "MelloRange",
+                        "reason": "hehge",
+                        "rule_number": "2"
+                    },
+                    "2": {
+                        "date": "2021-12-20",
+                        "given_by": "MelloRange",
+                        "reason": "hehge",
+                        "rule_number": "2"
+                    },
+                    "3": {
+                        "date": "2021-12-20",
+                        "given_by": "MelloRange",
+                        "reason": "hehge",
+                        "rule_number": "2"
+                    },
+                    "4": {
+                        "date": "2021-12-20",
+                        "given_by": "MelloRange",
+                        "reason": "hehge",
+                        "rule_number": "2"
+                    },
+                    "number": 4
+                },
+                "warnings": 0,
+                "weekly_points": 557
+            },
+            "302973145873252352": {
+                "aquarium": {
+                    "1": {
+                        "decor": "pink",
+                        "fish": [
+                            "tropifish",
+                            "mellofish",
+                            "yonfish"
+                        ],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 436,
+                "fish_location": "ocean",
+                "fish_log": {
+                    "anchovy": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 9
+                    },
+                    "atlantic cod": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 3
+                    },
+                    "barracuda": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 4
+                    },
+                    "blue tang": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 8
+                    },
+                    "blue tilapia": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 3
+                    },
+                    "channel catfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    },
+                    "copperband butterflyfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 3
+                    },
+                    "discus": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    },
+                    "fluke": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    },
+                    "flying fish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 3
+                    },
+                    "horse mackerel": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 9
+                    },
+                    "john dory": {
+                        "first_obtained": "2021-12-30",
+                        "total_caught": 1
+                    },
+                    "lemon sole": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 4
+                    },
+                    "minnow": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    },
+                    "red snapper": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 3
+                    },
+                    "reef triggerfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 2
+                    },
+                    "sardine": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 6
+                    },
+                    "sea bass": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 4
+                    },
+                    "sockeye salmon": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 4
+                    },
+                    "striped bass": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 3
+                    },
+                    "sweetfish": {
+                        "first_obtained": "2021-12-23",
+                        "total_caught": 1
+                    }
+                },
+                "fish_upgrades": [],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "bait": 999912,
+                    "chests": {},
+                    "dishes": {},
+                    "fish": {},
+                    "ingredients": {
+                        "broth": 1
+                    },
+                    "key": 2
+                },
+                "is_in_server": true,
+                "karma": 112,
+                "level": 4,
+                "money": {
+                    "gold": 0,
+                    "silver": 21438
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {
+                        "main_reference": "https://cdn.discordapp.com/attachments/922029305205227551/922411654875054132/wdawdawdawdwdawdwad.png"
+                    }
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 218
+            },
+            "340354052715970563": {
+                "aquarium": {
+                    "1": {
+                        "decor": "sand",
+                        "fish": [],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "chests": {},
+                    "dishes": {},
+                    "fish": {},
+                    "ingredients": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "347144799993987083": {
+                "aquarium": {
+                    "1": {
+                        "decor": "sand",
+                        "fish": [],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 128,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "chests": {},
+                    "dishes": {},
+                    "fish": {},
+                    "ingredients": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 3,
+                "money": {
+                    "gold": 0,
+                    "silver": 113
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 64
+            },
+            "383464478945050625": {
+                "aquarium": {
+                    "1": {
+                        "decor": "sand",
+                        "fish": [],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "chests": {},
+                    "dishes": {},
+                    "fish": {},
+                    "ingredients": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "466378653216014359": {
+                "aquarium": {
+                    "1": {
+                        "decor": "sand",
+                        "fish": [],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "chests": {},
+                    "dishes": {},
+                    "fish": {},
+                    "ingredients": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "619583816889139210": {
+                "aquarium": {
+                    "1": {
+                        "decor": "sand",
+                        "fish": [],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "chests": {},
+                    "dishes": {},
+                    "fish": {},
+                    "ingredients": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "819778342818414632": {
+                "aquarium": {
+                    "1": {
+                        "decor": "sand",
+                        "fish": [],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "chests": {},
+                    "dishes": {},
+                    "fish": {},
+                    "ingredients": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "863400066709454878": {
+                "aquarium": {
+                    "1": {
+                        "decor": "sand",
+                        "fish": [],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "chests": {},
+                    "dishes": {},
+                    "fish": {},
+                    "ingredients": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "909403577091489822": {
+                "aquarium": {
+                    "1": {
+                        "decor": "sand",
+                        "fish": [],
+                        "slots": 2
+                    }
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "garden": {
+                    "plot1": {
+                        "cost": 0,
+                        "day_planted": "2021-12-28",
+                        "flower": "Empty",
+                        "growth": "None"
+                    }
+                },
+                "inventory": {
+                    "chests": {},
+                    "dishes": {},
+                    "fish": {},
+                    "ingredients": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "pot": [],
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            }
+        },
+        "password": "orange",
+        "roles": {
+            "low_karma": "922370395095564328",
+            "member_role": "886014227691737199",
+            "most_active": "922682896823746562"
+        },
+        "world": {
+            "weather": "sunny"
+        }
+    },
+    "925587965944688681": {
+        "channels": {
+            "art": [],
+            "botbanned": [],
+            "expbanned": [],
+            "waiting_log": "0",
+            "waiting_room": "0",
+            "warning_log": "0"
+        },
+        "members": {
+            "201804863187714049": {
+                "aquarium": {
+                    "decor": "sand",
+                    "fish": []
+                },
+                "bans": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "232091727094218752": {
+                "aquarium": {
+                    "decor": "sand",
+                    "fish": []
+                },
+                "bans": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "255858966683320331": {
+                "aquarium": {
+                    "decor": "sand",
+                    "fish": []
+                },
+                "bans": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "263374409228746752": {
+                "aquarium": {
+                    "decor": "sand",
+                    "fish": []
+                },
+                "bans": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "302973145873252352": {
+                "aquarium": {
+                    "decor": "sand",
+                    "fish": []
+                },
+                "bans": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "347144799993987083": {
+                "aquarium": {
+                    "decor": "sand",
+                    "fish": []
+                },
+                "bans": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "619583816889139210": {
+                "aquarium": {
+                    "decor": "sand",
+                    "fish": []
+                },
+                "bans": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "855321205972008961": {
+                "aquarium": {
+                    "decor": "sand",
+                    "fish": []
+                },
+                "bans": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            }
+        },
+        "password": "orange",
+        "roles": {},
+        "world": {}
+    },
+    "926366988312387634": {
+        "channels": {
+            "art": [],
+            "botbanned": [],
+            "expbanned": [],
+            "waiting_log": "0",
+            "waiting_room": "0",
+            "warning_log": "0"
+        },
+        "members": {
+            "255858966683320331": {
+                "aquarium": {
+                    "decor": "sand",
+                    "fish": []
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 14,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 102
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 7
+            },
+            "263374409228746752": {
+                "aquarium": {
+                    "decor": "sand",
+                    "fish": []
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 2,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 101
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 1
+            },
+            "619583816889139210": {
+                "aquarium": {
+                    "decor": "sand",
+                    "fish": []
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            },
+            "855321205972008961": {
+                "aquarium": {
+                    "decor": "sand",
+                    "fish": []
+                },
+                "bans": {},
+                "cooking": {
+                    "pot": []
+                },
+                "eaten": {},
+                "experience": 0,
+                "fish_location": "river",
+                "fish_log": {},
+                "fish_upgrades": [],
+                "inventory": {
+                    "chests": {},
+                    "fish": {}
+                },
+                "is_in_server": true,
+                "karma": 20,
+                "level": 1,
+                "money": {
+                    "gold": 0,
+                    "silver": 100
+                },
+                "permissions": {},
+                "profile": {
+                    "color": 4671303,
+                    "description": "_Type `>profile description` to change your description!_",
+                    "reference": {}
+                },
+                "recipe_log": {},
+                "warning_history": {
+                    "number": 0
+                },
+                "warnings": 0,
+                "weekly_points": 0
+            }
+        },
+        "password": "orange",
+        "roles": {},
+        "world": {}
+    }
+}
