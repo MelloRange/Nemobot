@@ -1,7 +1,7 @@
 import os
-import sqlite3
 import discord
 import asyncio
+import datetime
 from discord.ext import commands
 
 from ..db import db
@@ -16,7 +16,7 @@ class Messagelog(commands.Cog):
 	async def codeword(self, ctx, codeword=None):
 		async def runsequence():
 			#If correct codeword, prompts users to type where they received invite link.
-			embed=discord.Embed(title="{}, please specify where exactly you got the invite link".format(ctx.message.author.display_name),
+			embed=discord.Embed(title=f"{ctx.message.author.display_name}, please specify where exactly you got the invite link",
 								description="**e.g.: weblink/URL or a friend's discord name.**\nType your answer in the chat. This message will expire in 5 minutes.",
 								color=discord.Color.teal())
 			botmessage = await ctx.send(embed=embed)
@@ -38,7 +38,7 @@ class Messagelog(commands.Cog):
 					else:
 						break
 				
-				embed=discord.Embed(title="{}, your message has been sent to the moderators.".format(ctx.message.author.display_name), description='Please be patient while they review it.\nIf you do not get a response in 1-2 days, please re-do the command or contact a moderator.', color=0x2ecc71)
+				embed=discord.Embed(title=f"{ctx.message.author.display_name}, your message has been sent to the moderators.", description='Please be patient while they review it.\nIf you do not get a response in 1-2 days, please re-do the command or contact a moderator.', color=0x2ecc71)
 
 				#Gets server defined waiting-log channel id.
 				channel = self.bot.get_channel(db.get_one('SELECT waiting_log FROM Servers WHERE server_id=?', ctx.message.guild.id))
@@ -83,7 +83,7 @@ class Messagelog(commands.Cog):
 			await runsequence()
 		else:
 			embed=discord.Embed(
-				title="{}, Codeword Incorrect.".format(ctx.message.author.display_name),
+				title=f"{ctx.message.author.display_name}, Codeword Incorrect.",
 				description='Format: >codeword `insert codeword here` \nPlease read the rules again.',
 				color=discord.Color.red())
 			return await ctx.send(embed=embed)
@@ -95,8 +95,8 @@ class Messagelog(commands.Cog):
 		if reaction.user_id == self.bot.user.id:
 			return
 
-		if reaction.channel_id == db.get_one('SELECT waiting_log FROM Servers WHERE server_id=?', ctx.message.guild.id):
-			channel = self.bot.get_channel(db.get_one('SELECT waiting_log FROM Servers WHERE server_id=?', ctx.message.guild.id))
+		if reaction.channel_id == db.get_one('SELECT waiting_log FROM Servers WHERE server_id=?', reaction.guild_id):
+			channel = self.bot.get_channel(db.get_one('SELECT waiting_log FROM Servers WHERE server_id=?', reaction.guild_id))
 			message = await channel.fetch_message(reaction.message_id)
 
 			emoji_list = []
@@ -129,6 +129,18 @@ class Messagelog(commands.Cog):
 					await user.send("You are being asked to re-do the codeword command with a more specific answer. (e.g. website link where you got the server invite)")
 
 				await message.add_reaction('🆗')
+
+		elif reaction.channel_id == db.get_one('SELECT warning_log FROM Servers WHERE server_id=?', reaction.guild_id):
+			channel = self.bot.get_channel(db.get_one('SELECT warning_log FROM Servers WHERE server_id=?', reaction.guild_id))
+			message = await channel.fetch_message(reaction.message_id)
+
+			if reaction.emoji.name == '❌':
+				warn_id = message.content.split().pop(-1)
+				db.execute('DELETE FROM Warns WHERE warn_id=?', warn_id)
+				new_message = message.content + f"\n> ❗ This warning has been voided by {reaction.member.mention} on {datetime.date.today()}."
+				await message.edit(content=new_message)
+
+
 		'''
 		elif str(reaction.channel_id) in data.load[guild]['channels']['art']:
 			data.load[guild]['members'][str(reaction.user_id)]['karma'] += 1

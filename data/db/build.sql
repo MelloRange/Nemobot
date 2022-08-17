@@ -44,8 +44,10 @@ CREATE TABLE IF NOT EXISTS Warns(
     server_id int NOT NULL,
     user_id int NOT NULL,
     warn_id INTEGER PRIMARY KEY AUTOINCREMENT, --incr
-    rule int DEFAULT 0,
     description text DEFAULT 'None',
+    issuer_name text,
+    issuer_id int,
+    warn_date text,
 
     FOREIGN KEY (server_id) REFERENCES Servers(server_id),
     FOREIGN KEY (user_id) REFERENCES Users(user_id)

@@ -25,7 +25,6 @@ def build():
 
 
 def commit():
-	print("Committing...")
 	conn.commit()
 
 
