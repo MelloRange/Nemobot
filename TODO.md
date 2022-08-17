@@ -1,4 +1,4 @@
-URGENT
+**URGENT**
 
 Moderator.py
 - Add "remove warning" feature
@@ -14,7 +14,7 @@ sqlite3-setup.py
 
 
 
-LESS URGENT
+**LESS URGENT**
 
 - Re-add all features from previous iteration
 
