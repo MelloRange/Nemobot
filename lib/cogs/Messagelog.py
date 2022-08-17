@@ -4,31 +4,12 @@ import discord
 import asyncio
 from discord.ext import commands
 
+from ..db import db
+
 class Messagelog(commands.Cog):
 
 	def __init__(self, bot):
 		self.bot = bot
-
-		DB_NAME = "database"
-		db_path = os.path.join(os.path.abspath(os.getcwd()), DB_NAME + ".db")
-		self.db = sqlite3.connect(db_path)
-		self.c = self.db.cursor()
-
-
-	def get_waiting_room(self, guild_id):
-		self.c.execute('SELECT waiting_room FROM Servers WHERE server_id=?', (guild_id,))
-		waiting_room = self.c.fetchone()
-		return waiting_room[0]
-
-	def get_waiting_log(self, guild_id):
-		self.c.execute('SELECT waiting_log FROM Servers WHERE server_id=?', (guild_id,))
-		waiting_log = self.c.fetchone()
-		return waiting_log[0]
-
-	def get_member_role(self, guild_id):
-		self.c.execute('SELECT member_role FROM Servers WHERE server_id=?', (guild_id,))
-		member_role = self.c.fetchone()
-		return member_role[0]
 
 
 	@commands.command()
@@ -60,17 +41,16 @@ class Messagelog(commands.Cog):
 				embed=discord.Embed(title="{}, your message has been sent to the moderators.".format(ctx.message.author.display_name), description='Please be patient while they review it.\nIf you do not get a response in 1-2 days, please re-do the command or contact a moderator.', color=0x2ecc71)
 
 				#Gets server defined waiting-log channel id.
-				channel = self.bot.get_channel(self.get_waiting_log(ctx.message.guild.id))
+				channel = self.bot.get_channel(db.get_one('SELECT waiting_log FROM Servers WHERE server_id=?', ctx.message.guild.id))
 
 				#Deletes all of a user's messages in the waiting room.
-				async for message in self.bot.get_channel(self.get_waiting_room(ctx.message.guild.id)).history(limit=200):
+				async for message in self.bot.get_channel(db.get_one('SELECT waiting_room FROM Servers WHERE server_id=?', ctx.message.guild.id)).history(limit=200):
 					if message.author == ctx.message.author and not message.pinned:
 						await message.delete()
 
 
 				#Checks for warnings on the user across all servers.
-				self.c.execute('SELECT * FROM Warns WHERE user_id=?', (ctx.message.author.id,))
-				warnings = self.c.fetchone()
+				warnings = db.get_one('SELECT * FROM Warns WHERE user_id=?', ctx.message.author.id)
 				if warnings == None:
 					warnings = 'None'
 				else:
@@ -98,8 +78,7 @@ class Messagelog(commands.Cog):
 		await ctx.message.delete()
 
 		#if codeword matches server defined codeword, proceed
-		self.c.execute('SELECT codeword FROM Servers WHERE server_id=?', (ctx.message.guild.id,))
-		servercode = self.c.fetchone()
+		servercode = db.get_one('SELECT codeword FROM Servers WHERE server_id=?', ctx.message.guild.id)
 		if codeword.lower() == servercode[0]:
 			await runsequence()
 		else:
@@ -116,8 +95,8 @@ class Messagelog(commands.Cog):
 		if reaction.user_id == self.bot.user.id:
 			return
 
-		if reaction.channel_id == self.get_waiting_log(reaction.guild_id):
-			channel = self.bot.get_channel(self.get_waiting_log(reaction.guild_id))
+		if reaction.channel_id == db.get_one('SELECT waiting_log FROM Servers WHERE server_id=?', ctx.message.guild.id):
+			channel = self.bot.get_channel(db.get_one('SELECT waiting_log FROM Servers WHERE server_id=?', ctx.message.guild.id))
 			message = await channel.fetch_message(reaction.message_id)
 
 			emoji_list = []
@@ -132,7 +111,7 @@ class Messagelog(commands.Cog):
 			if message.mentions or message.author.id != self.bot.user.id:
 				user = message.mentions[0]
 				if reaction.emoji.name == '✅':
-					role = discord.utils.get(channel.guild.roles, id=self.get_member_role(reaction.guild_id))
+					role = discord.utils.get(channel.guild.roles, id=db.get_one('SELECT member_role FROM Servers WHERE server_id=?', reaction.guild_id))
 					if user not in role.members:
 						#Loops to ensure member gets role
 						while True:
@@ -144,8 +123,7 @@ class Messagelog(commands.Cog):
 				elif reaction.emoji.name == '🚫':
 					await user.send("You have been denied entry and banned. Please DM YonKaGor or MelloRange if you believe this is a mistake.")
 					await user.ban(reason='Ban on entry')
-					self.c.execute('INSERT INTO Warns(server_id, user_id, description) VALUES(?,?,?)', (reaction.guild_id, user.id, 'Banned in waiting room.',))
-					self.db.commit()
+					db.execute('INSERT INTO Warns(server_id, user_id, description) VALUES(?,?,?)', (reaction.guild_id, user.id, 'Banned in waiting room.',))
 					
 				elif reaction.emoji.name == '🔁':
 					await user.send("You are being asked to re-do the codeword command with a more specific answer. (e.g. website link where you got the server invite)")
