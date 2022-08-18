@@ -48,6 +48,7 @@ CREATE TABLE IF NOT EXISTS Warns(
     issuer_name text,
     issuer_id int,
     warn_date text,
+    message_id int,
 
     FOREIGN KEY (server_id) REFERENCES Servers(server_id),
     FOREIGN KEY (user_id) REFERENCES Users(user_id)

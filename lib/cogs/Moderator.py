@@ -83,7 +83,6 @@ This member now has **{str(int(db.get_one('SELECT COUNT(*) FROM Warns WHERE user
 			elif reaction.emoji == '❌':
 				embed=discord.Embed(title="Warning cancelled.",
 								 description="‎", color=0x606060)
-				embed.set_author(name=f"")
 				return await msg.edit(embed=embed)
 
 		while(True):
@@ -135,7 +134,9 @@ Please contact the mods with the `>modmail <insert message here>` if you have an
 		warning_log = self.bot.get_channel(db.get_one('SELECT warning_log FROM Servers WHERE server_id=?', ctx.message.guild.id))
 
 		db.execute('INSERT OR IGNORE INTO Warns(server_id, user_id, description, issuer_name, issuer_id, warn_date) VALUES(?,?,?,?,?,?)', ctx.message.guild.id, member.id, reason, ctx.message.author.name, ctx.message.author.id, time)
-		await warning_log.send(warn_log + f"\nid: {db.get_one('SELECT MAX(warn_id) FROM Warns')}")
+		warn_id = db.get_one('SELECT MAX(warn_id) FROM Warns')
+		wm = await warning_log.send(warn_log + f"\nid: {warn_id}")
+		db.execute('UPDATE Warns SET message_id=? WHERE warn_id=?', wm.id, warn_id)
 
 		embed=discord.Embed(title="Done!", description="‎", color=0x00ff00)
 		embed.set_author(name=f"Warning for @/{member.display_name} ({member.name}) Issued")
@@ -160,6 +161,60 @@ Please contact the mods with the `>modmail <insert message here>` if you have an
                 value= f"Note: {warning[3]}\n`Given by: {warning[5]}`\n `Given on: {warning[6]}`",
                 inline=False)
 		await ctx.send(embed=embed)
+
+
+	@commands.command()
+	@commands.has_permissions(manage_messages = True)
+	async def removewarn(self, ctx, warnid=None):
+		if warnid == None:
+			return await ctx.send("Please enter the **warning id** you wish to remove. You may see the ID in `>warnlist`.\n>removewarn `insert warning id`")
+
+		warning = db.get_line('SELECT * FROM Warns WHERE warn_id=?', warnid)
+		if warning == None:
+			return await ctx.send("Warning not found.")
+
+		member = self.bot.get_user(warning[1])
+		reason = warning[3]
+		given_by = self.bot.get_user(warning[5])
+		time = warning[6]
+
+		embed=discord.Embed(title="The following warning will be removed. Please check if it is correct.\nReact ✅ to confirm, or ❌ to cancel.",
+			description=f"User: {member.mention}\nNote: {reason}\n`Given by: {warning[5]}`\n `Given on: {time}`", color=0xff0000)
+		msg = await ctx.send(embed=embed)
+
+		await msg.add_reaction('✅')
+		await msg.add_reaction('❌')
+
+		def check(reaction, user):
+			return user == ctx.message.author and str(reaction.emoji) in ['✅', '❌']
+
+		try:
+			reaction, user = await self.bot.wait_for('reaction_add', timeout=60.0, check=check)
+			await msg.clear_reactions()
+		except asyncio.TimeoutError:
+			embed=discord.Embed(title="Please try again.", description="‎", color=0x606060)
+			embed.set_author(name=f"Timed Out")
+			return await msg.edit(embed=embed)
+
+		if reaction.emoji == '✅':
+			channel = self.bot.get_channel(db.get_one('SELECT warning_log FROM Servers WHERE server_id=?', ctx.message.guild.id))
+			message = await channel.fetch_message(warning[7])
+			if message != None:
+				await message.edit(content=f"""Warning given to {member.mention} | `{member.name}#{member.discriminator}` | `{member.id}`
+Reason cited: **{reason}**
+This member now has **{str(db.get_one('SELECT COUNT(*) FROM Warns WHERE user_id=?', member.id))}** total warnings.
+`Given by {given_by.name} on {time}.`
+id: {warnid}
+> ❗ This warning has been voided by {ctx.message.author.mention} on {datetime.date.today()}.""")
+
+			db.execute('DELETE FROM Warns WHERE warn_id=?', warnid)
+			embed=discord.Embed(title="Warning removed.", description="‎", color=0x00ff00)
+		elif reaction.emoji == '❌':
+			embed=discord.Embed(title="Cancelled.",
+						 description="‎", color=0x606060)
+
+		return await msg.edit(embed=embed)
+
 
 
 def setup(bot):

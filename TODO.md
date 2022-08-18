@@ -1,8 +1,5 @@
 **URGENT**
 
-Moderator.py
-- Add "remove warning" feature
-- Add pagination to '>warnlist'
 
 Nemobot.py
 - Add to User on join
@@ -11,6 +8,8 @@ Nemobot.py
 sqlite3-setup.py
 - Add command to change codeword
 
+All
+- Add permission checks
 
 
 
@@ -26,5 +25,7 @@ sqlite3-setup.py
 
 Moderator.py
 - Remove user messages after receiving input
+- Create default "timeout" function
+- Add pagination to '>warnlist'
 
 

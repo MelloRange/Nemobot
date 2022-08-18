@@ -136,6 +136,10 @@ class Messagelog(commands.Cog):
 
 			if reaction.emoji.name == '❌':
 				warn_id = message.content.split().pop(-1)
+				warning = db.get_line('SELECT * FROM Warns WHERE warn_id=?', warn_id)
+				if warning == None:
+					return
+					
 				db.execute('DELETE FROM Warns WHERE warn_id=?', warn_id)
 				new_message = message.content + f"\n> ❗ This warning has been voided by {reaction.member.mention} on {datetime.date.today()}."
 				await message.edit(content=new_message)
