@@ -1,6 +1,7 @@
 import os
 import sqlite3
 import discord
+import asyncio
 from discord.ext import commands
 
 from ..db import db
@@ -186,6 +187,44 @@ class Sqlite3(commands.Cog):
                                                                         Member Role: {member_role.mention} 
                                                                     """, color=0x00FF00)
         await ctx.send(embed=embed)
+    
+    @commands.command(name="newcode")  # I thought of a temporary name, feel free to change it to something else
+    async def newcode(self, ctx, codeword=None):
+        """
+        Changes the code word after it has been set. Prompts user to confirm.
+        This isn't the most pretty, but it works.
+        Usage: >newcode [new codeword]
+        :return: None
+        """
+        if codeword is None:
+            # I wanted this to ask for a new code word but its 3AM and im pushing my work for now
+            return await ctx.send('Formatting is `>newcode [new code]`. Please re-run the command with the new desired code')
+            
+            
+
+        # read the code given
+        msg = await ctx.send(f'The code word will be changed to "{codeword}". React with ✅ to confirm or ❌ to cancel')
+
+        await msg.add_reaction('✅')
+        await msg.add_reaction('❌')
+        
+        # have user confirm or deny
+        def check(reaction, user):
+            # ???: will this listen to any message reaction or just the one on msg
+            return user == ctx.message.author and str(reaction.emoji) in ['✅', '❌']
+
+        try:
+            reaction, user = await self.bot.wait_for('reaction_add', timeout=60.0, check=check)
+            await msg.clear_reactions()
+        except asyncio.TimeoutError:
+            await ctx.send("Operation timed out. Please re-run the command")
+        
+        if reaction.emoji == '✅':
+            # if True:assign the code to the proper table
+            db.execute('''UPDATE Servers SET codeword=? WHERE Servers.server_id=?;''', codeword, ctx.message.guild.id)
+            await ctx.send(f'Codeword successfully changed to "{codeword}"')
+        elif reaction.emoji == '❌':
+            await ctx.send("Action cancelled. Please redo the command.")
         
 
 def setup(bot):
