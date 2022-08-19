@@ -28,7 +28,6 @@ class Bot(commands.Bot):
         super().__init__(command_prefix=config["prefix"], intents=intents)
 
 
-
     async def on_message(self, message):
         if message.author.bot:
             return
@@ -39,6 +38,15 @@ class Bot(commands.Bot):
         print(f"Logged in as {bot.user.name}")
         await bot.change_presence(activity=discord.Game(name = f'{config["prefix"]}help'))
 
+    async def on_member_join(member):
+        if db.get_one('SELECT user_id FROM user_in_server WHERE user_id=? AND server_id=?', member.id, member.guild.id) == None:
+            db.execute('INSERT OR IGNORE INTO Users(user_id) VALUES(?)', member.id)
+            db.execute('INSERT OR IGNORE INTO user_in_server(server_id, user_id) VALUES(?,?)', member.guild.id, member.id)
+        else:
+            db.execute('UPDATE user_in_server SET is_in_server=1 WHERE user_id=?', member.id)
+
+    async def on_member_leave(member):
+        db.execute('UPDATE user_in_server SET is_in_server=0 WHERE user_id=?', member.id)
 
 bot = Bot()
 

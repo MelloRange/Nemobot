@@ -4,16 +4,20 @@ CREATE TABLE IF NOT EXISTS Servers(
     waiting_room int,
     waiting_log int,
     warning_log int,
-    member_role int
+    member_role int,
+    suspended_role int,
+    active_role int
 );
 
 CREATE TABLE IF NOT EXISTS Users(
-    user_id int NOT NULL UNIQUE
+    user_id int NOT NULL UNIQUE,
+    is_flagged bit DEFAULT 0
 );
 
 CREATE TABLE IF NOT EXISTS user_in_server(
     server_id int NOT NULL,
     user_id int NOT NULL,
+    is_in_server bit DEFAULT 1,
     FOREIGN KEY (server_id) REFERENCES Servers(server_id),
     FOREIGN KEY (user_id) REFERENCES Users(user_id),
     UNIQUE(server_id, user_id)
