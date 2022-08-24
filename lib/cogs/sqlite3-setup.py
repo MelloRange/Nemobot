@@ -53,6 +53,7 @@ class Sqlite3(commands.Cog):
 
         try:
             channel_id = int(user_message.content)
+            await user_message.delete()
         except:
             return await ctx.send("Error: Please enter a channel id. Please redo the command.")
 
@@ -62,7 +63,7 @@ class Sqlite3(commands.Cog):
 
         db.execute('UPDATE Servers SET waiting_room=? WHERE server_id=?', channel_id, ctx.message.guild.id)
 
-        waiting_room = self.bot.get_channel(channel_id)
+        waiting_room = self.bot.get_channel(channel_id) # This line is the same as above, why was it repeated twice?
 
         embed=discord.Embed(title="Step 3/6", description=f"""✅ Added server to table.
                                                                 ✅ Added users.
@@ -76,6 +77,7 @@ class Sqlite3(commands.Cog):
 
         try:
             channel_id = int(user_message.content)
+            await user_message.delete()
         except:
             return await ctx.send("Error: Please enter a channel id. Please redo the command.")
 
@@ -85,7 +87,7 @@ class Sqlite3(commands.Cog):
 
         db.execute('UPDATE Servers SET waiting_log=? WHERE server_id=?', channel_id, ctx.message.guild.id)
 
-        waiting_log = self.bot.get_channel(channel_id)
+        waiting_log = self.bot.get_channel(channel_id) # This is the same as line 84.
 
         embed=discord.Embed(title="Step 4/6", description=f"""✅ Added server to table.
                                                                 ✅ Added users.
@@ -100,6 +102,7 @@ class Sqlite3(commands.Cog):
 
         try:
             channel_id = int(user_message.content)
+            await user_message.delete()
         except:
             return await ctx.send("Error: Please enter a channel id. Please redo the command.")
 
@@ -125,6 +128,7 @@ class Sqlite3(commands.Cog):
 
         try:
             role_id = int(user_message.content)
+            await user_message.delete()
         except:
             return await ctx.send("Error: Please enter a role id. Please redo the command.")
 
@@ -150,23 +154,24 @@ class Sqlite3(commands.Cog):
 
         try:
             role_id = int(user_message.content)
+            await user_message.delete()
         except:
             return await ctx.send("Error: Please enter a role id. Please redo the command.")
 
-        member_role = ctx.message.guild.get_role(role_id)
-        if member_role == None:
+        suspended_role = ctx.message.guild.get_role(role_id)
+        if suspended_role is None:
             return await ctx.send("Error: No such role exists. Please redo the command.")
 
-        db.execute('UPDATE Servers SET member_role=? WHERE server_id=?', role_id, ctx.message.guild.id)
+        db.execute('UPDATE Servers SET suspended_role=? WHERE server_id=?', role_id, ctx.message.guild.id)
 
-        embed=discord.Embed(title="Step 6/6", description=f"""✅ Added server to table.
+        embed = discord.Embed(title="Step 6/6", description=f"""✅ Added server to table.
                                                         ✅ Added users.
                                                             ✅ Added channels.
                                                                 ✅ {waiting_room.mention} set as waiting room.
                                                                     ✅ {waiting_log.mention} set as waiting log.
                                                                         ✅ {warning_log.mention} set as warning log.
                                                                             ✅ {member_role.mention} set as member role.
-                                                                                ✅ {member_role.mention} set as suspended role.""", color=0x00FF00)
+                                                                                ✅ {suspended_role.mention} set as suspended role.""", color=0x00FF00)
 
         embed.set_author(name="Done!")
         await msg.edit(embed=embed)
