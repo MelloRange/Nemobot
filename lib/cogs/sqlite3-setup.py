@@ -18,7 +18,7 @@ class Sqlite3(commands.Cog):
         embed.set_author(name="Setting up database...")
         msg = await ctx.send(embed=embed)
 
-        db.execute('INSERT OR IGNORE INTO Servers(server_id) VALUES(?)', ctx.message.guild.id)
+        db.execute('INSERT OR IGNORE INTO Servers(server_id, server_name) VALUES(?,?)', ctx.message.guild.id, ctx.message.guild.name)
 
         embed=discord.Embed(title="Step 1/6", description="""✅ Added server to table.
                                                                 Adding users...""", color=0xff0000)
@@ -183,13 +183,18 @@ class Sqlite3(commands.Cog):
 
         waiting_room = self.bot.get_channel(db.get_one('SELECT waiting_room FROM Servers WHERE server_id=?', ctx.message.guild.id))
         waiting_log = self.bot.get_channel(db.get_one('SELECT waiting_log FROM Servers WHERE server_id=?', ctx.message.guild.id))
+        warning_log = self.bot.get_channel(db.get_one('SELECt warning_log FROM Servers WHERE server_id=?', ctx.message.guild.id))
         member_role = ctx.message.guild.get_role(db.get_one('SELECT member_role FROM Servers WHERE server_id=?', ctx.message.guild.id))
+        suspended_role = ctx.message.guild.get_role(db.get_one('SELECT suspended_role FROM Servers WHERE server_id=?', ctx.message.guild.id))
         codeword = db.get_one('SELECT codeword FROM Servers WHERE server_id=?', ctx.message.guild.id)
 
         embed=discord.Embed(title="Server Settings", description=f"""Codeword: {codeword}
                                                                         Waiting Room: {waiting_room.mention}
                                                                         Waiting Log: {waiting_log.mention}
-                                                                        Member Role: {member_role.mention} 
+                                                                        Warning Log: {warning_log.mention}
+                                                                        Member Role: {member_role.mention}
+                                                                        Suspended Role: {suspended_role.mention}
+                                                                        
                                                                     """, color=0x00FF00)
         await ctx.send(embed=embed)
     
