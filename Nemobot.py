@@ -8,6 +8,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
 
 from lib.db import db
+from lib.db import report
 
 if not os.path.isfile("config.json"):
     sys.exit("'config.json' not found! Please add it and try again.")
@@ -25,6 +26,7 @@ class Bot(commands.Bot):
 
 
         db.autosave(self.scheduler)
+        report.send_report(self.scheduler)
         super().__init__(command_prefix=config["prefix"], intents=intents)
 
 

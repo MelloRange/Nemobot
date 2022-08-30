@@ -10,6 +10,11 @@ class Moderator(commands.Cog):
 	def __init__(self, bot):
 		self.bot = bot
 
+	async def cog_check(self, ctx):
+		#Check if user has mod role
+		mod = get(ctx.guild.roles, id=db.get_one('SELECT mod_role FROM Server WHERE server_id=?', ctx.guild.id))
+		return mod in ctx.author.roles
+
 	@commands.command()
 	@commands.has_permissions(manage_messages = True)
 	async def warn(self, ctx, member:discord.Member = None, userid = None, *, reason = None):
@@ -20,7 +25,7 @@ class Moderator(commands.Cog):
 			user_id = db.get_one('SELECT user_id FROM Users WHERE user_id=?', userid)
 			if user_id == None:
 				return await ctx.send("User not found.\nFormat: >warn `insert @ or user ID`")
-			member = ctx.message.guild.get_member(user_id)
+			member = ctx.guild.get_member(user_id)
 		else:
 			if userid != None:
 				if reason == None:
@@ -135,9 +140,9 @@ Please contact the mods with the `>modmail <insert message here>` if you have an
 				break
 
 
-		warning_log = self.bot.get_channel(db.get_one('SELECT warning_log FROM Servers WHERE server_id=?', ctx.message.guild.id))
+		warning_log = self.bot.get_channel(db.get_one('SELECT warning_log FROM Servers WHERE server_id=?', ctx.guild.id))
 
-		db.execute('INSERT OR IGNORE INTO Warns(server_id, user_id, description, issuer_name, issuer_id, warn_date) VALUES(?,?,?,?,?,?)', ctx.message.guild.id, member.id, reason, ctx.message.author.name, ctx.message.author.id, time)
+		db.execute('INSERT OR IGNORE INTO Warns(server_id, user_id, description, issuer_name, issuer_id, warn_date) VALUES(?,?,?,?,?,?)', ctx.guild.id, member.id, reason, ctx.message.author.name, ctx.message.author.id, time)
 		warn_id = db.get_one('SELECT MAX(warn_id) FROM Warns')
 		wm = await warning_log.send(warn_log + f"\nid: {warn_id}")
 		db.execute('UPDATE Warns SET message_id=? WHERE warn_id=?', wm.id, warn_id)
@@ -163,13 +168,13 @@ Please contact the mods with the `>modmail <insert message here>` if you have an
 			user_id = db.get_one('SELECT user_id FROM Users WHERE user_id=?', userid)
 			if user_id == None:
 				return await ctx.send("User not found.\n>warnlist `insert @ or user ID`")
-			member = ctx.message.guild.get_member(user_id)
+			member = ctx.guild.get_member(user_id)
 
 		embed=discord.Embed(title=f"{member.display_name}'s warnings", color=0xff0000)
 		for warning in db.get_all('SELECT * FROM Warns WHERE user_id=?', member.id):
 			embed.add_field(name="id: " + str(warning[2]), 
-                value= f"Note: {warning[3]}\n`Given by: {warning[5]}`\n `Given on: {warning[6]}`",
-                inline=False)
+				value= f"Note: {warning[3]}\n`Given by: {warning[5]}`\n `Given on: {warning[6]}`",
+				inline=False)
 		await ctx.send(embed=embed)
 
 
@@ -207,7 +212,7 @@ Please contact the mods with the `>modmail <insert message here>` if you have an
 			return await msg.edit(embed=embed)
 
 		if reaction.emoji == '✅':
-			channel = self.bot.get_channel(db.get_one('SELECT warning_log FROM Servers WHERE server_id=?', ctx.message.guild.id))
+			channel = self.bot.get_channel(db.get_one('SELECT warning_log FROM Servers WHERE server_id=?', ctx.guild.id))
 			message = await channel.fetch_message(warning[7])
 			if message != None:
 				await message.edit(content=f"""Warning given to {member.mention} | `{member.name}#{member.discriminator}` | `{member.id}`
@@ -235,7 +240,7 @@ id: {warnid}
 			user_id = db.get_one('SELECT user_id FROM Users WHERE user_id=?', userid)
 			if user_id == None:
 				return await ctx.send("User not found.\nFormat: >flag `insert @ or user ID`")
-			member = ctx.message.guild.get_member(user_id)
+			member = ctx.guild.get_member(user_id)
 
 		db.execute('UPDATE Users SET is_flagged = 1 WHERE user_id=?', member.id)
 		return await ctx.send("User flagged. Check flagged users with >flags.")
@@ -246,9 +251,9 @@ id: {warnid}
 		user_ids = db.get_column('SELECT Users.user_id FROM Users INNER JOIN user_in_server ON Users.user_id=user_in_server.user_id WHERE Users.is_flagged=1 AND user_in_server.is_in_server=1')
 		embed=discord.Embed(title=f"List of flagged users", color=0xff0000)
 		for user_id in user_ids:
-			member = ctx.message.guild.get_member(user_id)
+			member = ctx.guild.get_member(user_id)
 			embed.add_field(name=f"‎", 
-                value=f"{member.mention}", inline=False)
+				value=f"{member.mention}", inline=False)
 		await ctx.send(embed=embed)
 
 	@commands.command()
@@ -261,7 +266,7 @@ id: {warnid}
 			user_id = db.get_one('SELECT user_id FROM Users WHERE user_id=?', userid)
 			if user_id == None:
 				return await ctx.send("User not found.\nFormat: >flag `insert @ or user ID`")
-			member = ctx.message.guild.get_member(user_id)
+			member = ctx.guild.get_member(user_id)
 
 		db.execute('UPDATE Users SET is_flagged = 1 WHERE user_id=?', member.id)
 		return await ctx.send("User unflagged. Check flagged users with >flags.")

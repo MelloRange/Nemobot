@@ -10,5 +10,6 @@ Version: BETA
 
 Dependencies:
 
-apscheduler
-discord.py
+- apscheduler
+- discord.py
+- openpyxl
