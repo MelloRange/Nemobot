@@ -5,8 +5,12 @@ CREATE TABLE IF NOT EXISTS Servers(
     waiting_log int,
     warning_log int,
     member_role int,
+    active_role int,
+    mod_role int,
+    admin_role int,
     suspended_role int,
-    active_role int
+    mod_log_msg int,
+    admin_log int
 );
 
 CREATE TABLE IF NOT EXISTS Users(
@@ -53,6 +57,17 @@ CREATE TABLE IF NOT EXISTS Warns(
     issuer_id int,
     warn_date text,
     message_id int,
+
+    FOREIGN KEY (server_id) REFERENCES Servers(server_id),
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
+CREATE TABLE IF NOT EXISTS Mods(
+    server_id int NOT NULL,
+    user_id int NOT NULL,
+    name text,
+    is_on_duty BIT DEFAULT 0,
+    timezone int DEFAULT 0,
 
     FOREIGN KEY (server_id) REFERENCES Servers(server_id),
     FOREIGN KEY (user_id) REFERENCES Users(user_id)
