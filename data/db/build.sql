@@ -1,5 +1,6 @@
 CREATE TABLE IF NOT EXISTS Servers(
     server_id int NOT NULL UNIQUE,
+    server_name text,
     codeword text DEFAULT 'orange',
     waiting_room int,
     waiting_log int,
