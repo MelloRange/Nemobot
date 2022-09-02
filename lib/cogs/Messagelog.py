@@ -80,7 +80,7 @@ class Messagelog(commands.Cog):
 
 		#if codeword matches server defined codeword, proceed
 		servercode = db.get_one('SELECT codeword FROM Servers WHERE server_id=?', ctx.message.guild.id)
-		if codeword.lower() == servercode[0]:
+		if codeword.lower() == servercode:
 			await runsequence()
 		else:
 			embed=discord.Embed(
