@@ -28,7 +28,6 @@ CREATE TABLE IF NOT EXISTS user_in_server(
     UNIQUE(server_id, user_id)
 );
 
-
 CREATE TABLE IF NOT EXISTS Channels(
     server_id int NOT NULL,
     channel_id int NOT NULL UNIQUE,
