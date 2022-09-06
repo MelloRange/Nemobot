@@ -32,6 +32,6 @@ New planned features
 - '>nemo' command for random Nemo picture
 - music bot system (? check discord compliance rules for YT API, else use local files of YonKaGor songs)
 - potential trading system
-- nomod #annoucements
+- nomod #announcements
 - flag for review system
 - automod

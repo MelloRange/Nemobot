@@ -15,8 +15,8 @@ class Messagelog(commands.Cog):
 	@commands.command()
 	async def codeword(self, ctx, codeword=None):
 		async def runsequence():
-			#If correct codeword, prompts users to type where they received invite link.
-			embed=discord.Embed(title=f"{ctx.message.author.display_name}, please specify where exactly you got the invite link",
+			# If correct codeword, prompts users to type where they received invite link.
+			embed = discord.Embed(title=f"{ctx.message.author.display_name}, please specify where exactly you got the invite link",
 								description="**e.g.: weblink/URL or a friend's discord name.**\nType your answer in the chat. This message will expire in 5 minutes.",
 								color=discord.Color.teal())
 			botmessage = await ctx.send(embed=embed)
@@ -26,11 +26,11 @@ class Messagelog(commands.Cog):
 				return m.author == author
 
 			try:
-				#If response is one of the generic responses, it will prompt to redo input until correct.
+				# If response is one of the generic responses, it will prompt to redo input until correct.
 				while True:
 					response = await self.bot.wait_for('message', check=check, timeout=60*5)
 					if response.content.lower() in ['youtube', 'video', 'youtube video', 'video url', 'video link',
-													'reddit', 'a friend', 'r/yonkagor'] or 'discord.gg' in response.content:
+													'reddit', 'a friend', 'r/yonkagor', 'url', 'weblink'] or 'discord.gg' in response.content:
 						embed = discord.Embed(
 							title="Please be more specific.\n**e.g.: weblink/URL or a friend's discord name.**",
 							description='Type your answer in the chat. This message will expire in 5 minutes.',
@@ -39,12 +39,12 @@ class Messagelog(commands.Cog):
 					else:
 						break
 				
-				embed=discord.Embed(title=f"{ctx.message.author.display_name}, your message has been sent to the moderators.", description='Please be patient while they review it.\nIf you do not get a response in 1-2 days, please re-do the command or contact a moderator.', color=0x2ecc71)
+				embed = discord.Embed(title=f"{ctx.message.author.display_name}, your message has been sent to the moderators.", description='Please be patient while they review it.\nIf you do not get a response in 1-2 days, please re-do the command or contact a moderator.', color=0x2ecc71)
 
-				#Gets server defined waiting-log channel id.
+				# Gets server defined waiting-log channel id.
 				channel = self.bot.get_channel(db.get_one('SELECT waiting_log FROM Servers WHERE server_id=?', ctx.message.guild.id))
 
-				#Deletes all of a user's messages in the waiting room.
+				# Deletes all of a user's messages in the waiting room.
 				async for message in self.bot.get_channel(db.get_one('SELECT waiting_room FROM Servers WHERE server_id=?', ctx.message.guild.id)).history(limit=200):
 					if message.author == ctx.message.author and not message.pinned:
 						await message.delete()
